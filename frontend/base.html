@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="chatbox hidden">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <div class="online-status">
+                        <span class="online-text">Online</span>
+                    </div>
+                </div>
+                <button class="chatbox__close--button">&#10005;</button>
+            </div>
+            <div class="chatbox__messages">
+                <!-- Messages will be appended here -->
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message..." id="chatbox-input">
+                <button class="chatbox__send--footer" id="chatbox-send"> 
+
+                    <img src="./images/send.png" width="23px" alt="Send"/>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="chatbox__button">
+        <p class="chatbox__button--text">Need assistance?</p>
+        <button id="chatbox-toggle"><img src="./images/chatbox-icon.png" alt="Chat Icon"/></button>
+    </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
